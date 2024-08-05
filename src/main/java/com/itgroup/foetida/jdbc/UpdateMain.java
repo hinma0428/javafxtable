@@ -22,7 +22,7 @@ public class UpdateMain {
         int id = scan.nextInt();
 
         Scanner scan2 = new Scanner(System.in);
-        System.out.print("수정할 일시(202011221212) : ");
+        System.out.print("수정할 일시(yyyyMMdd HHmm) : ");
         String time = scan2.nextLine();
 
         //공용 메소드 활용?
@@ -50,7 +50,7 @@ public class UpdateMain {
         bean.setDevice("프리스타일 리브레 2");
         bean.setHba1c(7.9);
         bean.setReact("없음");
-        bean.setBinsulin("투제오 13");
+        bean.setBinsulin("투제오 11");
 
         int cnt = -1 ; // -1을 실패한 경우라고 가정합니다.
         cnt = dao.updateData(bean);
