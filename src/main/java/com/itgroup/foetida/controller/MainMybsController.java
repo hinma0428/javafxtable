@@ -54,6 +54,7 @@ public class MainMybsController implements Initializable {
 
     //master
     //병원을 갈까 냉면을 먹을까...
+    //내가 먼저 push함
 
     private String mode = null; //필드 검색을 위한 mode 변수(유틸리티 클래스에서 참조할 수 있게 인스턴스 레벨)
     private ObservableList<Mybs> dataList = null;
