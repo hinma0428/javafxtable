@@ -18,7 +18,7 @@ public class MainMybs extends Application {
 
         Parent container = fxmlLoader.load(); // 승급
         Scene scene = new Scene(container);
-        stage.setTitle("need more cash");
+        stage.setTitle("bloodsugar management system v 0.1");
         stage.setScene(scene);
         stage.show();
 
