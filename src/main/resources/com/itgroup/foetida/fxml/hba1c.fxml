@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.itgroup.foetida.controller.Hba1cController">
+   <children>
+      <TextField fx:id="textField" layoutX="22.0" layoutY="194.0">
+         <font>
+            <Font size="40.0" />
+         </font></TextField>
+      <Label layoutX="40.0" layoutY="300.0" text="건강한 사람에게서 측정되는 당화혈색소는 4~5%, ">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="40.0" layoutY="330.0" text="당뇨인에게 기대되는 관리 정도 6%" textFill="#000dff">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+
+      <Label layoutX="40.0" layoutY="80.0" text="  - 혈중 세포가 얼마나 포도당에 찌들었는지 나타내는 지표로,&#10;  - 아래와 같은 공식으로 산출합니다.">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="40.0" layoutY="130.0" text="3개월치 혈당 기록의 평균 = (당화혈색소 X 35) - 75" textFill="#ff0808">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="40.0" layoutY="40.0" text="당화혈색소(HbA1C, %)란">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

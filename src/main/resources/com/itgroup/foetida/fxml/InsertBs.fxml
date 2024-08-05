@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="440.0" prefWidth="350.0" style="-fx-border-color: hotpink; -fx-background-color: LavenderBlush;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.itgroup.foetida.controller.InsertBsController">
+   <children>
+      <Label layoutX="40.0" layoutY="30.0" text="새로운 혈당을 기록합니다">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="36.0" layoutY="80.0" text="혈 당(mg/dL)" />
+      <Label layoutX="36.0" layoutY="130.0" text="측정일시" />
+      <Label layoutX="36.0" layoutY="180.0" text="측정장비" />
+      <Label layoutX="36.0" layoutY="230.0" text="기저 인슐린(unit)" />
+      <Label layoutX="36.0" layoutY="280.0" text="REACT" />
+      <TextField fx:id="fxmlBsugar" layoutX="150.0" layoutY="76.0" promptText="bloodsugar by int"
+              />
+      <TextField fx:id="fxmlMedate" layoutX="150.0" layoutY="116.0" promptText="metime by HHmm"
+            text="20240801 1135" />
+      <TextField fx:id="fxmlDevice" layoutX="150.0" layoutY="176.0" promptText="metime by HHmm"
+                 text="프리스타일 리브레 2" />
+       <TextField fx:id="fxmlBinsulin" layoutX="150.0" layoutY="226.0" promptText="투제오 13 unit"
+                  text="투제오 13 unit" />
+      <TextField fx:id="fxmlReact" layoutX="150.0" layoutY="276.0" promptText="bloodsugar by int"
+                 text="점심을 먹음" />
+      <Button fx:id="btnInsert" layoutX="128.0" layoutY="350.0" mnemonicParsing="false" onAction="#onInsertBs"
+              prefHeight="47.0" prefWidth="94.0"
+              text="등록" />
+   </children>
+</AnchorPane>

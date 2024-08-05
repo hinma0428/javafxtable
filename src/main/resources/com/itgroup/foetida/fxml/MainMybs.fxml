@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="586.0" prefWidth="960.0" style="-fx-background-color: aliceblue;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.itgroup.foetida.controller.MainMybsController">
+   <children>
+
+      <TableView fx:id="bsugarTable" layoutX="270.0" layoutY="182.0" prefHeight="340.0" prefWidth="600.0">
+        <columns>
+            <TableColumn fx:id="dataidC" text="번호" />
+            <TableColumn fx:id="bsugarC" prefWidth="67.0" text="혈당" />
+          <TableColumn fx:id="medateC" text="측정일시" />
+          <TableColumn fx:id="deviceC" prefWidth="116.0" text="측정장비" />
+          <TableColumn fx:id="binsulinC" prefWidth="108.0" text="기저 인슐린" />
+          <TableColumn fx:id="reactC" prefWidth="148.0" text="대처액션" />
+
+        </columns>
+      </TableView>
+       <Label fx:id="pageStatus" layoutX="743.0" layoutY="100.0" prefHeight="34.0" prefWidth="91.0" />
+
+      <ImageView fx:id="checkImage" fitHeight="190.0" fitWidth="180.0" layoutX="40.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/device01.jpg" />
+         </image></ImageView>
+
+
+      <Button fx:id="btnFinish" layoutX="814.0" layoutY="530.0" mnemonicParsing="false" onAction="#onClosing" text="종료" />
+      <Button fx:id="btnInsert" layoutX="814.0" layoutY="40.0" mnemonicParsing="false" onAction="#onInsert" text="등록" textFill="BLUE" />
+<Pagination fx:id="pagination" currentPageIndex="1" layoutX="520.0" layoutY="180.0" minHeight="60.0" pageCount="3" prefHeight="400" />
+      <ListView fx:id="selectHl" layoutX="270.0" layoutY="50.0" prefHeight="82.0" prefWidth="150.0" />
+      <Button fx:id="btnUpdate" layoutX="814.0" layoutY="80.0" mnemonicParsing="false" onAction="#onUpdate" text="수정" />
+           <Button fx:id="btnDelete" layoutX="814.0" layoutY="120.0" mnemonicParsing="false" onAction="#onDelete" text="삭제" textFill="RED" />
+      <ImageView fitHeight="190.0" fitWidth="180.0" layoutX="40.0" layoutY="380.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/insulin01.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="190.0" fitWidth="180.0" layoutX="40.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/device02.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="440.0" layoutY="100.0" text="bloodsugar management system v 0.1">
+         <font>
+            <Font name="Ink Free" size="18.0" />
+         </font>
+      </Label>
+
+   </children>
+</AnchorPane>
